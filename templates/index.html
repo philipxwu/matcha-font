@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>matcha-font</title>
+    <link href="{{ url_for('static', filename='styles/style.css')}}" rel="stylesheet" />
+</head>
+<body>
+    <h1>matcha-font</h1>
+    <form action="/predict" method = 'post' enctype="multipart/form-data">
+        <input type="file" name="file" id ='file' 
+        placeholder="upload an image" required />
+        <button type="submit">submit</button>
+    </form>
+    
+</body>
+</html>
