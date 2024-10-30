@@ -9,8 +9,8 @@
 <body>
     <h1>matcha-font</h1>
     <img src="{{ url_for('static', filename='uploads/' + filename) }}">
-    <p>Font is {{ outputname }} with {{ outputpercent }}% confidence</p>
-    <p>Sample {{ outputname }} font image below</p>
+    <p >Font is {{ outputname }} with {{ outputpercent }}% confidence</p>
+    <p >Sample {{ outputname }} font image below</p>
     <img src="{{ url_for('static', filename = 'fonts_image_dataset/'+ folderimg)}}" >
     <form action="/predict" method = 'post' enctype="multipart/form-data">
         <input type="file" name="file" id ='file' 
